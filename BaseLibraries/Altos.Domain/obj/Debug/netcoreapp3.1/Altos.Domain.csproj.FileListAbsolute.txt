@@ -1,0 +1,9 @@
+D:\_Projects\Tests\Altos\Altos\BaseLibraries\Altos.Domain\bin\Debug\netcoreapp3.1\Altos.Domain.deps.json
+D:\_Projects\Tests\Altos\Altos\BaseLibraries\Altos.Domain\bin\Debug\netcoreapp3.1\Altos.Domain.dll
+D:\_Projects\Tests\Altos\Altos\BaseLibraries\Altos.Domain\bin\Debug\netcoreapp3.1\Altos.Domain.pdb
+D:\_Projects\Tests\Altos\Altos\BaseLibraries\Altos.Domain\obj\Debug\netcoreapp3.1\Altos.Domain.AssemblyInfoInputs.cache
+D:\_Projects\Tests\Altos\Altos\BaseLibraries\Altos.Domain\obj\Debug\netcoreapp3.1\Altos.Domain.AssemblyInfo.cs
+D:\_Projects\Tests\Altos\Altos\BaseLibraries\Altos.Domain\obj\Debug\netcoreapp3.1\Altos.Domain.csproj.CoreCompileInputs.cache
+D:\_Projects\Tests\Altos\Altos\BaseLibraries\Altos.Domain\obj\Debug\netcoreapp3.1\Altos.Domain.dll
+D:\_Projects\Tests\Altos\Altos\BaseLibraries\Altos.Domain\obj\Debug\netcoreapp3.1\Altos.Domain.pdb
+D:\_Projects\Tests\Altos\Altos\BaseLibraries\Altos.Domain\obj\Debug\netcoreapp3.1\Altos.Domain.csprojAssemblyReference.cache

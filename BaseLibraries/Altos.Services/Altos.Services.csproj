@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="FluentValidation" Version="9.2.2" />
+    <PackageReference Include="FluentValidation.ValidatorAttribute" Version="8.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Altos.Data\Altos.Data.csproj" />
+    <ProjectReference Include="..\Altos.Domain\Altos.Domain.csproj" />
+    <ProjectReference Include="..\Altos.Util\Altos.Util.csproj" />
+  </ItemGroup>
+
+</Project>

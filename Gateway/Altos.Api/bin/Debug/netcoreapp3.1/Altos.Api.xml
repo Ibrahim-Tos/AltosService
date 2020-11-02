@@ -1,0 +1,2136 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Moonshine.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Moonshine.Api.Controllers.Addresses.AddressesController">
+            <summary>
+            Provides APIs for working with addresses.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Addresses.AddressesController.#ctor(Moonshine.Services.Addresses.IAddressService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Addresses.AddressesController"/> class.
+            </summary>
+            <param name="addressService"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Addresses.AddressesController.Insert(Moonshine.Services.Addresses.Dtos.AddressPrimitiveDto)">
+            <summary>
+            Creates a new category
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Addresses.AddressesController.Update(Moonshine.Services.Addresses.Dtos.AddressPrimitiveDto)">
+            <summary>
+            Updates an existing company
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Addresses.AddressesController.Get(System.Int32)">
+            <summary>
+            Gets a specific address with the specified identifier.
+            </summary>
+            <param name="id">Id of the address</param>
+            <returns>Address data</returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Addresses.AddressesController.GetAll">
+            <summary>
+            Gets all state provinces
+            </summary>
+            <returns>State province data</returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Alerts.AlertsController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Alerts.AlertsController.#ctor(Moonshine.Services.Alerts.IAlertService)">
+            <summary>
+            
+            </summary>
+            <param name="alertService"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Alerts.AlertsController.Insert(Moonshine.Services.Alerts.Dtos.AlertWithProductsDto,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            
+            </summary>
+            <param name="dto"></param>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Alerts.AlertsController.Get(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Alerts.AlertsController.GetAll(Moonshine.Services.Alerts.Dtos.SearchAlertWithProductsRequest)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Alerts.AlertsController.GetPrimitives(Moonshine.Services.Alerts.Dtos.SearchAlertsRequest)">
+            <summary>
+            Get all primitives alerts
+            </summary>
+            <remarks>This API will get all primitives alerts.</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Alerts.AlertsController.Update(Moonshine.Services.Alerts.Dtos.AlertWithProductsDto,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            
+            </summary>
+            <param name="dto"></param>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Alerts.AlertsController.Delete(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Alerts.AlertsController.InsertProductInstanceAlert(Moonshine.Services.Products.Dtos.ProductInstanceAlertDto)">
+            <summary>
+            Creates new product instance alert or updates existing
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Bokun.BokunController">
+            <summary>
+            Provides APIs for working with the Bokun inventory plugin services.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Bokun.BokunController.#ctor(Moonshine.Services.Api.Bokun.IBokunService,Microsoft.Extensions.Logging.ILogger{Moonshine.Api.Controllers.Bokun.BokunController})">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Bokun.BokunController.Reserve(Moonshine.Services.Api.Bokun.Dtos.ReservationRequestModel)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Bokun.BokunController.Confirm(Moonshine.Services.Api.Bokun.Dtos.ConfirmBookingRequestModel)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Bokun.BokunController.Cancel(Moonshine.Services.Api.Bokun.Dtos.CancelBookingRequest)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Bokun.BokunController.Search(Moonshine.Services.Api.Bokun.Dtos.SearchProductRequest)">
+            <summary>
+            
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Bokun.BokunController.GetById(Moonshine.Services.Api.Bokun.Dtos.GetProductByIdRequest)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Bokun.BokunController.GetAvailable(Moonshine.Services.Api.Bokun.Dtos.ProductsAvailabilityRequest)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Bokun.BokunController.GetAvailability(Moonshine.Services.Api.Bokun.Dtos.ProductAvailabilityRequest)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Bokun.BokunController.Definition">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Caching.CacheController">
+            <summary>
+            Provides APIs for working with the application cache.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Caching.CacheController.#ctor(Moonshine.Core.Caching.ICacheManager,Moonshine.Services.Security.IPermissionCheckerService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Caching.CacheController"/> class.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Caching.CacheController.Get(System.String)">
+            <summary>
+            Clears the cache by prefix key pattern, or global if no prefix specified.
+            </summary>
+            <param name="prefix"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Calendar.CalendarController">
+            <summary>
+            Provides APIs for working with calendar.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Calendar.CalendarController.#ctor(Moonshine.Services.Calendar.ICalendarService,Moonshine.Services.Security.IPermissionCheckerService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Discounts.DiscountsController"/> class.
+            </summary>
+            <param name="calendarService"></param>
+            <param name="permissionCheckerService"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Calendar.CalendarController.Get(Moonshine.Services.Products.Dtos.SearchProductInstancesRequest)">
+            <summary>
+            Get calendar instances
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Calendar.CalendarController.DownloadHeadset(Moonshine.Services.Products.Dtos.GetHeadsetRequest)">
+            <summary>
+            Download headset csv file
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Calendar.CalendarController.GetDateChangeRequests(System.Int32)">
+            <summary>
+            Get date change requests
+            </summary>
+            <param name="productInstanceId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Calendar.CalendarController.UpdateDateChangeRequest(Moonshine.Services.Calendar.Dtos.UpdateDateChangeRequestRequest)">
+            <summary>
+            Update a date change request
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Categories.CategoriesController">
+            <summary>
+            Provides APIs for working with categories.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Categories.CategoriesController.#ctor(Moonshine.Services.Categories.ICategoryService,Moonshine.Services.Security.IPermissionCheckerService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Categories.CategoriesController"/> class.
+            </summary>
+            <param name="categoryService"></param>
+            <param name="permissionCheckerService"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Categories.CategoriesController.Insert(Moonshine.Services.Categories.Dtos.CategoryDto)">
+            <summary>
+            Creates a new category
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Categories.CategoriesController.Get(System.Int32)">
+            <summary>
+            Gets a category by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Categories.CategoriesController.GetAll(Moonshine.Services.Categories.Dtos.SearchCategoriesRequest)">
+            <summary>
+            Gets a collection of categories using the specified input parameters
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Categories.CategoriesController.Update(Moonshine.Services.Categories.Dtos.UpdateCategoryRequest)">
+            <summary>
+            Updates an existing category
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Categories.CategoriesController.Delete(System.Int32)">
+            <summary>
+            Deletes a category
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Categories.CategoriesController.UpdateCategoriesForNewNavigation">
+            <summary>
+            Performs a specific update to the database to support the new dynamic category structure for the eCommerce UI.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Categories.CategoryPicturesController">
+            <summary>
+            Provides APIs for working with category pictures.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Categories.CategoryPicturesController.#ctor(Moonshine.Services.Categories.ICategoryPictureService,Moonshine.Services.Security.IPermissionCheckerService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Categories.CategoryPicturesController"/> class.
+            </summary>
+            <param name="categoryPictureService"></param>
+            <param name="permissionCheckerService"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Categories.CategoryPicturesController.Insert(Moonshine.Services.Categories.Dtos.InsertCategoryPictureRequest)">
+            <summary>
+            Creates a new category picture
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Categories.CategoryPicturesController.Get(System.Int32)">
+            <summary>
+            Gets a category pictures by category id
+            </summary>
+            <param name="categoryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Categories.CategoryPicturesController.Update(Moonshine.Services.Categories.Dtos.UpdateCategoryPictureRequest)">
+            <summary>
+            Update category picture information.
+            </summary>
+            <param name="request">Category picture update request</param>
+            <remarks>This API will update category picture information.</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Categories.CategoryPicturesController.Delete(System.Int32)">
+            <summary>
+            Delete category picture associated with a specified identifier
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Orders.ChannelsController">
+            <summary>
+            Provides APIs for working with orders
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Orders.ChannelsController.#ctor(Moonshine.Services.Orders.IChannelService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Orders.ChannelsController"/> class.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Orders.ChannelsController.GetAll(System.Boolean)">
+            <summary>
+            Gets all channels
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Orders.OrderItemsController">
+            <summary>
+            Provides APIs for working with order items.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Orders.OrderItemsController.#ctor(Moonshine.Services.Orders.IOrderItemService,Moonshine.Services.CustomOrders.ICustomOrderItemService,Moonshine.Services.Security.IPermissionCheckerService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Orders.OrderItemsController"/> class.
+            </summary>
+            <param name="orderItemService"></param>
+            <param name="customOrderItemService"></param>
+            <param name="permissionCheckerService"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Orders.OrderItemsController.AddOrderItemToOrder(Moonshine.Services.Orders.Dtos.InsertOrderItemRequest)">
+            <summary>
+            Adds an order item to an existing order
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Orders.OrderItemsController.AddCustomOrderItemToOrder(Moonshine.Services.Orders.Dtos.InsertCustomOrderItemRequest)">
+            <summary>
+            Adds a custom order item to an existing order
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Orders.OrderItemsController.GetAll(Moonshine.Services.Orders.Dtos.SearchOrderItemsRequest)">
+            <summary>
+            Gets a collection of order items using the specified input parameters
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Orders.OrderItemsController.Update(Moonshine.Services.Orders.Dtos.UpdateOrderItemAndPayRequest)">
+            <summary>
+            Updates an existing order item
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Orders.OrderItemsController.Delete(Moonshine.Services.Orders.Dtos.DeleteOrderItemRequest)">
+            <summary>
+            Deletes an order item
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Orders.OrderNotesController">
+            <summary>
+            Provides APIs for working with order notes.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Orders.OrderNotesController.#ctor(Moonshine.Services.Orders.IOrderNoteService,Moonshine.Services.Security.IPermissionCheckerService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Orders.OrdersController"/> class.
+            </summary>
+            <param name="orderNoteService"></param>
+            <param name="permissionCheckerService"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Orders.OrderNotesController.Insert(Moonshine.Services.Orders.Dtos.InsertOrderNoteRequest)">
+            <summary>
+            Creates a new order note
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Orders.OrderNotesController.GetAll(System.Int32)">
+            <summary>
+            Gets all orders notes using the specified input parameters
+            </summary>
+            <param name="orderId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Orders.OrdersController">
+            <summary>
+            Provides APIs for working with orders
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Orders.OrdersController.#ctor(Moonshine.Services.Orders.IOrderService,Moonshine.Services.Security.IPermissionCheckerService,Moonshine.Services.Messaging.IEmailSender)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Orders.OrdersController"/> class.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Orders.OrdersController.Insert(Moonshine.Services.Orders.Dtos.CreateOrderRequest)">
+            <summary>
+            Creates a new order
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Orders.OrdersController.GetAll(Moonshine.Services.Orders.Dtos.SearchOrdersRequest)">
+            <summary>
+            Gets all orders using the specified input parameters
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Orders.OrdersController.Get(System.Int32)">
+            <summary>
+            Gets a specific order with the specified identifier.
+            </summary>
+            <param name="id">Id of the order</param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Orders.OrdersController.Update(Moonshine.Services.Orders.Dtos.UpdateOrderRequest)">
+            <summary>
+            Updates an order
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Orders.OrdersController.Delete(System.Int32)">
+            <summary>
+            Delete order associated with a specified identifier
+            </summary>
+            <param name="orderId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Orders.OrdersController.GetAllOrdersWithActiveDebts(Moonshine.Services.Payments.Dto.SearchOrdersWithActiveDebtsRequest)">
+            <summary>
+            Gets a collection of orders with active debts
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Orders.OrdersController.SendVoucher(System.Int32)">
+            <summary>
+            Sends a receipt to a customer
+            </summary>
+            <param name="orderId">Id of the order</param>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Common.CountriesController">
+            <summary>
+            Provides APIs for working with countries and state/provinces
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Common.CountriesController.#ctor(Moonshine.Services.Common.ICountryService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Common.CountriesController"/> class.
+            </summary>
+            <param name="countryService"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Common.CountriesController.GetAll(Moonshine.Services.Common.Dtos.SearchCountriesRequest)">
+            <summary>
+            Get all countries using the specified parameters.
+            </summary>
+            <param name="request"></param>
+            <returns>Countries</returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Common.CurrencyConversionController">
+            <summary>
+            Provides APIs for working with countries and state/provinces
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Common.CurrencyConversionController.#ctor(Moonshine.Services.Currencies.ICurrencyConversionService,Moonshine.Services.Currencies.ICurrencyService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Common.CurrencyConversionController"/> class.
+            </summary>
+            <param name="currencyConversionService"></param>
+            <param name="currencyService"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Common.CurrencyConversionController.ConvertFromPrimaryToTargetByCode(System.Decimal,System.String)">
+            <summary>
+            Converts amount in primary story currency to target currency
+            </summary>
+            <param name="amount">amount in primary story currency</param>
+            <param name="targetCurrencyCode">Code of target currency to convert to</param>
+            <returns>Amount in target currency</returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Common.TimeZoneController">
+            <summary>
+            Get a list of timezones so the user doesn't have to know them
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Common.TimeZoneController.#ctor(Moonshine.Core.Helpers.IDateTimeHelper)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Common.TimeZoneController"/> class.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Common.TimeZoneController.Get">
+            <summary>
+            Gets a list of timezones
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Companies.CompaniesController">
+            <summary>
+            Provides APIs for working with companies.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Companies.CompaniesController.#ctor(Moonshine.Services.Companies.ICompanyService,Moonshine.Services.Security.IPermissionCheckerService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Companies.CompaniesController"/> class.
+            </summary>
+            <param name="companyService"></param>
+            <param name="permissionCheckerService"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Companies.CompaniesController.Get(System.Int32)">
+            <summary>
+            Gets a company by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Companies.CompaniesController.GetAll(Moonshine.Services.Companies.Dtos.SearchCompaniesRequest)">
+            <summary>
+            Get all companies using the specified parameters.
+            </summary>
+            <param name="request"></param>
+            <returns>A collection of companies</returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Companies.CompaniesController.GetAddress(System.Int32)">
+            <summary>
+            Gets a company address
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Companies.CompaniesController.Update(Moonshine.Services.Companies.Dtos.UpdateCompanyRequest)">
+            <summary>
+            Updates an existing company
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Configuration.SettingsController">
+            <summary>
+            Provides APIs for working with configuration settings.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Configuration.SettingsController.#ctor(Moonshine.Services.Configuration.ISettingService,Moonshine.Services.Security.IPermissionCheckerService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Configuration.SettingsController"/> class.
+            </summary>
+            <param name="settingService"></param>
+            <param name="permissionCheckerService"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Configuration.SettingsController.Get(System.Int32)">
+            <summary>
+            Gets a setting by id.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Configuration.SettingsController.GetAll">
+            <summary>
+            Get all settings using the specified parameters.
+            </summary>
+            <returns>A collection of settings</returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Configuration.SettingsController.Update(Moonshine.Core.Domain.Configuration.Setting)">
+            <summary>
+            Updates an existing setting
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Configuration.SettingsController.BatchUpdate(System.Collections.Generic.ICollection{Moonshine.Core.Domain.Configuration.Setting})">
+            <summary>
+            Batch updates a collection of existing settings
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Dashboard.DashboardController">
+            <summary>
+            Provides APIs for working with the dashboard.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Dashboard.DashboardController.#ctor(Moonshine.Services.Dashboard.IDashboardService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Dashboard.DashboardController"/> class.
+            </summary>
+            <param name="dashboardService"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Dashboard.DashboardController.Index(Moonshine.Services.Dashboard.Dto.GetDashboardRequest)">
+            <summary>
+            Gets the main dashboard data.
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Discounts.DiscountProductsController">
+            <summary>
+            Provides APIs for working with discount products.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Discounts.DiscountProductsController.#ctor(Moonshine.Services.Discounts.IDiscountProductService,Moonshine.Services.Security.IPermissionCheckerService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Discounts.DiscountProductsController"/> class.
+            </summary>
+            <param name="discountProductService"></param>
+            <param name="permissionCheckerService"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Discounts.DiscountProductsController.GetDiscountProducts(System.Int32)">
+            <summary>
+            Get all product which is assigned or can be assigned to the discount by discount id
+            </summary>
+            <param name="discountId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Discounts.DiscountProductsController.UpdateDiscountProducts(System.Int32,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Get all product which is assigned or can be assigned to the discount by discount id
+            </summary>
+            <param name="discountId"></param>
+            <param name="productIds"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Discounts.DiscountsController">
+            <summary>
+            Provides APIs for working with discounts.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Discounts.DiscountsController.#ctor(Moonshine.Services.Discounts.IDiscountService,Moonshine.Services.Security.IPermissionCheckerService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Discounts.DiscountsController"/> class.
+            </summary>
+            <param name="discountService"></param>
+            <param name="permissionCheckerService"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Discounts.DiscountsController.Insert(Moonshine.Services.Discounts.Dtos.DiscountDto)">
+            <summary>
+            
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Discounts.DiscountsController.Get(System.Int32)">
+            <summary>
+            Gets a discount by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Discounts.DiscountsController.GetAll(Moonshine.Services.Discounts.Dtos.SearchDiscountsRequest)">
+            <summary>
+            Get all discounts
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Discounts.DiscountsController.Update(Moonshine.Services.Discounts.Dtos.UpdateDiscountRequest)">
+            <summary>
+            Updates an existing discount
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.GiftCards.GiftCardsController">
+            <summary>
+            Provides APIs for working with orders
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.GiftCards.GiftCardsController.#ctor(Moonshine.Services.GiftCards.IGiftCardService,Moonshine.Services.Security.IPermissionCheckerService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.GiftCards.GiftCardsController"/> class.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.GiftCards.GiftCardsController.Search(Moonshine.Services.GiftCards.Dtos.SearchGiftCardsRequest)">
+            <summary>
+            Gets a list of gift cards associated to an order
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.GiftCards.GiftCardsController.CalculateGiftCardAmount(Moonshine.Services.GiftCards.CalculateGiftCardAmountRequest)">
+            <summary>
+            Calculates gift card amount
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.GiftCards.GiftCardsController.AddToGiftCard(Moonshine.Services.GiftCards.Dtos.AddToGiftCardsRequest)">
+            <summary>
+            Creates gift cards
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.GiftCards.GiftCardsController.Insert(Moonshine.Services.GiftCards.Dtos.CreateGiftCardAndGiftCardPaymentRequest)">
+            <summary>
+            Creates gift cards
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.GiftCards.GiftCardsController.Transfer(Moonshine.Services.GiftCards.Dtos.TransferGiftCardRequest)">
+            <summary>
+            Transfers gift card to another user
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.GiftCards.GiftCardsController.ChangeMultiplier(Moonshine.Services.GiftCards.Dtos.ChangeMultiplierOfUnusedGiftCardRequest)">
+            <summary>
+            Recreate unused gift card with a new multiplier
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Guides.GuidesController">
+            <summary>
+            Provides APIs for working with orders
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Guides.GuidesController.#ctor(Moonshine.Services.Security.IPermissionCheckerService,Moonshine.Services.Guides.IGuidesService,Moonshine.Services.Authentication.ICurrentUserService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Guides.GuidesController"/> class.
+            </summary>
+            <param name="permissionCheckerService"></param>
+            <param name="guidesService"></param>
+            <param name="currentUserService"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Guides.GuidesController.AssignInstancesGuide(System.Int32,System.Int32[])">
+            <summary>
+            Assign guide for multiple instances
+            </summary>
+            <param name="id"></param>
+            <param name="productInstanceIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Guides.GuidesController.RequestInstanceGuides(Moonshine.Services.Guides.Dtos.RequestInstanceGuidesRequest)">
+            <summary>
+            Request instance guides
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Guides.GuidesController.ConfirmAssignedGuide(System.Int32,System.Int32)">
+            <summary>
+            Confirm assigned guide
+            </summary>
+            <param name="userId"></param>
+            <param name="productInstanceId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Guides.GuidesController.GetAllAssignableInstances(Moonshine.Services.Guides.Dtos.GetAllAssignableProductInstancesRequest)">
+            <summary>
+            Gets all self assignable product instances for the specified request parameters
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Guides.GuidesController.GetAllSelfAssignableInstances(Moonshine.Services.Guides.Dtos.GetAllSelfAssignableProductInstancesRequest)">
+            <summary>
+            Gets all self assignable product instances for the specified request parameters
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Guides.GuidesController.GetAllRequests(Moonshine.Services.Guides.Dtos.GetAllSelfAssignableProductInstancesRequest)">
+            <summary>
+            Gets all self assignable product instances for the specified request parameters
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Guides.GuidesController.GetAllInvoices(Moonshine.Services.Guides.Dtos.SearchGuideInvoiceRequest)">
+            <summary>
+            Gets all guide invoices for the specified request parameters
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Guides.GuidesController.GetInvoiceDetails(Moonshine.Services.Guides.Dtos.SearchGuideInvoiceRequest)">
+            <summary>
+            Get Invoice details 
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Guides.GuidesController.UpdateForRequest(Moonshine.Services.Guides.Dtos.UpdateGuideProductInstanceRequest)">
+            <summary>
+            Updates the guide assigned to a product instance for a pending request
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Guides.GuidesController.GetAllSelfAssignableProducts(System.Nullable{System.Int32})">
+            <summary>
+            Gets all self assignable products for the specified guide 
+            </summary>
+            <param name="guideId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Guides.GuidesController.Update(Moonshine.Services.Guides.Dtos.UpdateGuideProductInstanceRequest)">
+            <summary>
+            Updates the guide assigned to a product instance
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Guides.GuidesController.UpdateGuideInvoiceItem(Moonshine.Services.Guides.Dtos.UpdateGuideInvoiceItemRequest)">
+            <summary>
+            Update guide invoice item
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Guides.GuidesController.GenerateGuideInvoicePdf(Moonshine.Services.Guides.Dtos.GenerateGuideInvoicePdfRequest)">
+            <summary>
+            Generate guide invoice PDF
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Guides.GuidesController.ConfirmSendGuideInvoice(Moonshine.Services.Guides.Dtos.ConfirmSendGuideInvoiceRequest)">
+            <summary>
+            Confirm send guide invoice
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Guides.GuidesController.ApproveGuideInvoice(Moonshine.Services.Guides.Dtos.ApproveGuideInvoiceRequest)">
+            <summary>
+            Approve guide invoice
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Guides.GuidesController.SetReimbursement(Moonshine.Services.Guides.Dtos.UpdateGuideInvoiceReimbursementRequest)">
+            <summary>
+            Set Reimbursement
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Guides.GuidesController.SetExchangeRate(Moonshine.Services.Guides.Dtos.UpdateGuideInvoiceExchangeRateRequest)">
+            <summary>
+            Set Exchange Rate
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Guides.GuidesController.SetPaymentDate(Moonshine.Services.Guides.Dtos.UpdateGuideInvoicePaymentDateRequest)">
+            <summary>
+            Set Payment Date
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Payments.PaymentsController">
+            <summary>
+            Provides APIs for working payments
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Payments.PaymentsController.#ctor(Moonshine.Services.Payments.IPaymentService,Moonshine.Services.Security.IPermissionCheckerService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Payments.PaymentsController"/> class.
+            </summary>
+            <param name="paymentService"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Payments.PaymentsController.GetAll(Moonshine.Services.Payments.Dto.SearchPaymentsRequest)">
+            <summary>
+            Get all payments from the specified input parameters.
+            </summary>
+            <param name="request">Parameters used to get the payments</param>
+            <returns>A collection of payments found</returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Payments.PaymentsController.GetPaymentMethods">
+            <summary>
+            Get all payments methods.
+            </summary>
+            <returns>A collection of payments methods found</returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Payments.PaymentsController.Insert(Moonshine.Services.Payments.Dto.InsertPaymentRequest)">
+            <summary>
+            Creates and processes a new payment
+            </summary>
+            <param name="request">Parmaeters for creating the new payment</param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Payments.PaymentsController.InsertPaymentRequest(Moonshine.Services.Payments.Dto.InsertRefundRequestForOrderItemRequest)">
+            <summary>
+            Inserts a payment request for order item
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Payments.PaymentsController.InsertPaymentRequest(Moonshine.Services.Payments.Dto.InsertRefundRequestForOrderRequest)">
+            <summary>
+            Inserts a payment request for order
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Payments.PaymentsController.GetAllPaymentRequests(Moonshine.Services.Payments.Dto.SearchPaymentRequestsRequest)">
+            <summary>
+            Gets a collection of payment requests
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Payments.PaymentsController.InsertExternalPaymentRequest(Moonshine.Services.Payments.Dto.InsertExternalPaymentRequest)">
+            <summary>
+            Inserts an external payment
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Payments.PaymentsController.InsertAutoRefundPaymentRequest(Moonshine.Services.Payments.Dto.InsertRefundPaymentRequest)">
+            <summary>
+            Inserts automatic refund request
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Payments.PaymentsController.InsertNoAutoRefundPaymentRequest(Moonshine.Services.Payments.Dto.InsertRefundPaymentRequest)">
+            <summary>
+            Inserts no automatic refund request
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Payments.PaymentsController.DeleteRefundRequest(System.Int32)">
+            <summary>
+            Delete refund request
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Payments.PaymentsController.SendRefundRequestNotification(System.Int32)">
+            <summary>
+            Sends a refund request notification to a customer for an individual refund request
+            </summary>
+            <param name="paymentRequestId">Id of the refund request</param>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Products.ProductAlertsController">
+            <summary>
+            Provides APIs for working with product level alerts.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductAlertsController.#ctor(Moonshine.Services.Products.IProductAlertService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Products.ProductAlertsController"/> class.
+            </summary>
+            <param name="productAlertService"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductAlertsController.GetAll(System.Int32)">
+            <summary>
+            Gets alerts associated to the specified product
+            </summary>
+            <param name="productId">The product identifier</param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductAlertsController.UpdateProductAlert(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Adds or removes the specified alert from the product
+            </summary>
+            <param name="id">Alert Id</param>
+            <param name="productId">Product Id</param>
+            <param name="set">on or off</param>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Products.ProductAttributeMappingsController">
+            <summary>
+            Provides APIs for working with product attribute mappings.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductAttributeMappingsController.#ctor(Moonshine.Services.Products.IProductAttributeMappingService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Products.ProductAttributeMappingsController"/> class.
+            </summary>
+            <param name="productAttributeMappingService"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductAttributeMappingsController.Insert(System.Int32,Moonshine.Services.Products.Dtos.ProductAttributes.ProductAttributeMappingDto)">
+            <summary>
+            Insert product attribute mapping record
+            </summary>
+            <param name="productId"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductAttributeMappingsController.Get(System.Int32,System.Int32)">
+            <summary>
+            Gets product attribute mapping with a specified identifier
+            </summary>
+            <param name="productId"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductAttributeMappingsController.GetAll(System.Int32)">
+            <summary>
+            Gets product attribute mappings associated to the specified product
+            </summary>
+            <param name="productId">The product identifier</param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductAttributeMappingsController.Update(Moonshine.Services.Products.Dtos.ProductAttributes.ProductAttributeMappingDto)">
+            <summary>
+            Update product attribute mapping
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductAttributeMappingsController.Delete(System.Int32,System.Int32)">
+            <summary>
+            Delete product attribute mappings associated with a specified identifier
+            </summary>
+            <param name="productId"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductAttributeMappingsController.Delete(System.Int32)">
+            <summary>
+            Delete product attribute mappings associated to the specified product
+            </summary>
+            <param name="productId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Products.ProductAttributesController">
+            <summary>
+            Deals with the attributes themselves, their mappings,
+            and the values for those mappings.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductAttributesController.#ctor(Moonshine.Services.Products.IProductAttributeService,Moonshine.Services.Security.IPermissionCheckerService)">
+            <summary>
+            ctor
+            </summary>
+            <param name="productAttributeService"></param>
+            <param name="permissionCheckerService"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductAttributesController.Get(System.Int32)">
+            <summary>
+            Get all attributes and their values for a product
+            </summary>
+            <param name="productId"></param>
+            <returns>List of product attributes with their values</returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductAttributesController.InsertOrUpdateProductAttribute(Moonshine.Services.Products.Dtos.ProductAttributes.ProductAttributeDto)">
+            <summary>
+            Creates or updates an attribute.  This is a general case
+            thng that can be applied to any/all products
+            </summary>
+            <param name="attribute"></param>
+            <returns>id of the thing you created/updated</returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductAttributesController.InsertOrUpdateProductMappingAndAttributeValues(Moonshine.Services.Products.Dtos.ProductAttributes.ProductAttributeMappingDto)">
+            <summary>
+            This creates or updates the attribute a mapping and adds the values specified
+            </summary>
+            <param name="attribute"></param>
+            <returns>nothing</returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductAttributesController.DeleteProductAttribute(System.Int32)">
+            <summary>
+            Deletes the attribute itself.
+            If there are products mapped to the attribute
+            it will not be deleted.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductAttributesController.DeleteProductAttributeMapping(System.Int32)">
+            <summary>
+            Deletes the mapping of the attribute
+            This is a more common operation, so if it
+            has values, those are deleted as well
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductAttributesController.DeleteProductAttributeValue(System.Int32)">
+            <summary>
+            Deletes a specific attribute value
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Products.ProductCategoriesController">
+            <summary>
+            Provides APIs for working with product categories.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductCategoriesController.#ctor(Moonshine.Services.Products.IProductCategoryService,Moonshine.Services.Security.IPermissionCheckerService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Products.ProductCategoriesController"/> class.
+            </summary>
+            <param name="productCategoryService"></param>
+            <param name="permissionCheckerService"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductCategoriesController.Insert(Moonshine.Services.Products.Dtos.InsertProductCategoryRequest)">
+            <summary>
+            Insert product category record
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductCategoriesController.Get(System.Int32)">
+            <summary>
+            Gets a product category by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductCategoriesController.GetProductMap(System.Int32)">
+            <summary>
+            Returns a map of all the product categories and whether or not
+            the product has the category
+            </summary>
+            <param name="productId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductCategoriesController.GetAll(Moonshine.Services.Products.Dtos.SearchProductCategoriesRequest)">
+            <summary>
+            Gets a collection of product categories using the specified input parameters
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductCategoriesController.ProductCategoryMapUpdate(System.Int32,System.Collections.Generic.List{Moonshine.Services.Products.Dtos.CategoryProductMapDeltaDto})">
+            <summary>
+            This should be used in combination with the ProductCategoryMap
+            This accepts the deltas from the map being used, and 
+            applies them to the database.
+            
+            It is not necessary for their to be an actual change.  The
+            database is checked before action is taken.
+            </summary>
+            <param name="productId"></param>
+            <param name="deltas"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductCategoriesController.Update(Moonshine.Services.Products.Dtos.UpdateProductCategoryRequest)">
+            <summary>
+            Updates an existing product category
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductCategoriesController.Delete(System.Int32)">
+            <summary>
+            Deletes a product category
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Products.ProductFaqsController">
+            <summary>
+            Provides APIs for working with product FAQs.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductFaqsController.#ctor(Moonshine.Services.Products.IProductFaqsService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Products.ProductFaqsController"/> class.
+            </summary>
+            <param name="productFaqsService"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductFaqsController.Insert(Moonshine.Services.Products.Dtos.ProductFaqDto)">
+            <summary>
+            Insert product FAQ record
+            </summary>
+            <param name="productFaqDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductFaqsController.GetAll(System.Int32)">
+            <summary>
+            Gets product FAQs associated to the specified product
+            </summary>
+            <param name="productId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductFaqsController.Update(Moonshine.Services.Products.Dtos.ProductFaqDto)">
+            <summary>
+            Update product FAQ
+            </summary>
+            <param name="productFaqDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductFaqsController.Delete(System.Int32)">
+            <summary>
+            Delete product FAQ associated with a specified identifier
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Products.ProductInstancesController">
+            <summary>
+            Provides APIs for working with product instances.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductInstancesController.#ctor(Moonshine.Services.Products.IProductInstanceService,Moonshine.Services.Security.IPermissionCheckerService,Moonshine.Services.Tickets.ITicketsService,Moonshine.Services.Products.IProductInstanceFileService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Products.ProductInstancesController"/> class.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductInstancesController.Insert(Moonshine.Services.Products.Dtos.InsertUpdateProductInstancesRequest)">
+            <summary>
+            Insert updates product instances.
+            </summary>
+            <param name="request">Request</param>
+            <remarks>This API will insert or update product instances.</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductInstancesController.InsertSingleInstance(Moonshine.Services.Products.Dtos.InsertSingleProductInstanceRequest)">
+            <summary>
+            Insert single product instance.
+            </summary>
+            <param name="request">Request</param>
+            <remarks>This API will insert single product instance.</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductInstancesController.Get(System.Int32)">
+            <summary>
+            Get details about a product instance.
+            </summary>
+            <remarks>This API will get a product instance.</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductInstancesController.GetDetails(System.Int32)">
+            <summary>
+            Get full details about a product instance.
+            </summary>
+            <remarks>This API will get a product instance with details.</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductInstancesController.GetAll(Moonshine.Services.Products.Dtos.SearchProductInstancesRequest)">
+            <summary>
+            Get all product instances based of the specified search parameters.
+            </summary>
+            <remarks>This API will get all product instances matching the specified search parameters.</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductInstancesController.GetTimesForProduct(System.Int32)">
+            <summary>
+            Gets all products and the times at which they run.
+            This is mostly for handling burn and composing tours.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductInstancesController.UpdateProductInstanceTime(Moonshine.Services.Products.Dtos.UpdateProductInstanceTimeRequest)">
+            <summary>
+            Updates product instance.
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductInstancesController.Update(Moonshine.Services.Products.Dtos.UpdateProductInstanceRequest)">
+            <summary>
+            Updates product instance.
+            </summary>
+            <param name="request">Request</param>
+            <remarks>This API will update product instances.</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductInstancesController.UpdateProductInstanceCompletionStatus(System.Int32,System.Boolean)">
+            <summary>
+            Update product instance completion status
+            </summary>
+            <param name="id"></param>
+            <param name="isCompleted"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductInstancesController.UpdateProductInstanceClosureStatus(System.Int32,System.Boolean)">
+            <summary>
+            Update product instance closure status
+            </summary>
+            <param name="id"></param>
+            <param name="isClosed"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductInstancesController.Delete(System.Int32)">
+            <summary>
+            Delete product instance associated with a specified identifier
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductInstancesController.UpdateProductInstancesAlerts(Moonshine.Services.Products.Dtos.ProductInstanceAlertDto[])">
+            <summary>
+            Update product instance alerts
+            </summary>
+            <param name="alerts"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductInstancesController.InsertProductInstancesTicket(Moonshine.Services.Tickets.Dtos.InsertTicketRequest)">
+            <summary>
+            Update product instance tickets
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductInstancesController.UpdateProductInstancesTickets(Moonshine.Services.Tickets.Dtos.UpdateTicketRequest)">
+            <summary>
+            Update product instance tickets
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductInstancesController.DeleteProductInstancesTickets(System.Int32)">
+            <summary>
+            Delete product instance tickets
+            </summary>
+            <param name="ticketId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductInstancesController.UpdateProductInstancesGuides(System.Int32,System.Int32[])">
+            <summary>
+            Update product instance guides
+            </summary>
+            <param name="id"></param>
+            <param name="requestedGuideIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductInstancesController.InsertProductInstancesFile(Moonshine.Services.Products.Dtos.InsertProductInstanceFileRequest)">
+            <summary>
+            Insert product instance file
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductInstancesController.DownloadProductInstanceFileBytes(System.Int32)">
+            <summary>
+            Delete product instance file
+            </summary>
+            <param name="fileId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductInstancesController.DeleteProductInstanceFileAsync(System.Int32)">
+            <summary>
+            Delete product instance file
+            </summary>
+            <param name="fileId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Products.ProductInstanceSeriesController">
+            <summary>
+            Deals with a series of product instances
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductInstanceSeriesController.#ctor(Moonshine.Services.Products.IProductInstanceSeriesService)">
+            <summary>
+            ctor...
+            </summary>
+            <param name="productInstanceSeriesService"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductInstanceSeriesController.Get(System.Int32)">
+            <summary>
+            Get all for the product.
+            </summary>
+            <param name="productId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductInstanceSeriesController.GetAllWithRules(System.Int32)">
+            <summary>
+            Get all of the instance series for a product, but only the ones that
+            have rules (i.e. they were created by our system, and can be edited.)
+            </summary>
+            <param name="productId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductInstanceSeriesController.GetForInstance(System.Int32)">
+            <summary>
+            Get all for the instance.  This will become relevant when 
+            instances get variable pricing
+            </summary>
+            <param name="instanceId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductInstanceSeriesController.CreateNewSeries(System.Collections.Generic.IEnumerable{Moonshine.Services.Products.Dtos.ProductInstanceSeriesDtos.ProductInstanceSeriesDto})">
+            <summary>
+            Create a new series of instances based on the rules
+            </summary>
+            <param name="newSeries"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductInstanceSeriesController.GetDropDownValuesForRule">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductInstanceSeriesController.DeleteSeriesIfPossible(System.Int32)">
+            <summary>
+            Attempt to delete a series.  If it fails, a failure message will be sent back.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Products.ProductLocationsController">
+            <summary>
+            Provides APIs for working with product locations.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductLocationsController.#ctor(Moonshine.Services.Products.IProductLocationService,Moonshine.Services.Products.IProductPictureService,Moonshine.Services.Security.IPermissionCheckerService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Products.ProductLocationsController"/> class.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductLocationsController.Insert(Moonshine.Services.Products.Dtos.InsertUpdateProductLocationRequest)">
+            <summary>
+            Insert product location.
+            </summary>
+            <param name="request">Product location with picture dto and image</param>
+            <remarks>This API will insert product location.</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductLocationsController.GetAll(System.Int32)">
+            <summary>
+            Gets product locations associated to the specified product
+            </summary>
+            <param name="productId">The product identifier</param>
+            <remarks>This API will get all product locations associated to the specified product.</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductLocationsController.Update(Moonshine.Services.Products.Dtos.InsertUpdateProductLocationRequest)">
+            <summary>
+            Update product location.
+            </summary>
+            <param name="request">Product location with picture dto and file</param>
+            <remarks>This API will update product location.</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductLocationsController.Delete(System.Int32)">
+            <summary>
+            Delete product instance associated with a specified identifier
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Products.ProductPicturesController">
+            <summary>
+            Provides APIs for working with product pictures.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductPicturesController.#ctor(Moonshine.Services.Products.IProductPictureService,Moonshine.Services.Security.IPermissionCheckerService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Products.ProductPicturesController"/> class.
+            </summary>
+            <param name="productPictureService"></param>
+            <param name="permissionCheckerService"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductPicturesController.Insert(Moonshine.Services.Products.Dtos.ProductPictureDto,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Insert product picture.
+            </summary>
+            <param name="dto">Product picture dto</param>
+            <param name="picture">Picture</param>
+            <remarks>This API will insert product picture.</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductPicturesController.GetAll(System.Int32)">
+            <summary>
+            Gets product pictures associated to the specified product
+            </summary>
+            <param name="productId">The product identifier</param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductPicturesController.Update(Moonshine.Services.Products.Dtos.UpdateProductPictureRequest)">
+            <summary>
+            Update product picture.
+            </summary>
+            <param name="request">Update product picture request</param>
+            <remarks>This API will update product picture.</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductPicturesController.Delete(System.Int32)">
+            <summary>
+            Delete product picture associated with a specified identifier
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Products.ProductReviewsController">
+            <summary>
+            Provides APIs for working with product reviews
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductReviewsController.#ctor(Moonshine.Services.Products.IProductReviewService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Products.ProductReviewsController"/> class.
+            </summary>
+            <param name="productReviewService"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductReviewsController.GetAll(Moonshine.Services.Products.Dtos.GetProductReviewsRequest)">
+            <summary>
+            Gets a collection of product categories using the specified input parameters
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductReviewsController.Put(Moonshine.Services.Products.Dtos.ProductReviewPrimitiveDto)">
+            <summary>
+            
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductReviewsController.PutAll(Moonshine.Services.Products.Dtos.BatchUpdateProductReviewRequest)">
+            <summary>
+            
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Products.ProductsController">
+            <summary>
+            Provides APIs for working with products.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductsController.#ctor(Moonshine.Services.Products.IProductService,Moonshine.Services.Products.AssociatedProducts.IProductAssociatedProductsService,Moonshine.Services.Security.IPermissionCheckerService,Moonshine.Services.Orders.IVoucherService,Moonshine.Services.Products.IProductDescriptorService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Products.ProductsController"/> class.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductsController.Insert(Moonshine.Services.Products.Dtos.ProductDto)">
+            <summary>
+            Insert a product.
+            </summary>
+            <param name="request">Request</param>
+            <remarks>This API will insert a product.</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductsController.Publish(System.Int32)">
+            <summary>
+            Publishes the specified product, and if already published, then will unpublish.
+            </summary>
+            <param name="productId">the product to publish/unpublish.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductsController.Get(System.Int32)">
+            <summary>
+            Get details about a product.
+            </summary>
+            <remarks>This API will get a product.</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductsController.GetPrimitives(Moonshine.Services.Products.Dtos.SearchProductsRequest)">
+            <summary>
+            Get all products based of the specified search parameters.
+            </summary>
+            <remarks>This API will get all products matching the specified search parameters.</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductsController.GetAll(Moonshine.Services.Products.Dtos.SearchProductsRequest)">
+            <summary>
+            Get all products based of the specified search parameters.
+            </summary>
+            <remarks>This API will get all products matching the specified search parameters.</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductsController.GetAllProductTemplates">
+            <summary>
+            Get all product templates
+            </summary>
+            <remarks>This API will get all product templates matching the specified search parameters.</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductsController.GetAllShort">
+            <summary>
+            Get a small subset of data for all products
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductsController.Update(Moonshine.Services.Products.Dtos.ProductDto)">
+            <summary>
+            Update a product.
+            </summary>
+            <param name="request">Request</param>
+            <remarks>This API will update a product.</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductsController.Delete(System.Int32)">
+            <summary>
+            Delete product associated with a specified identifier
+            </summary>
+            <param name="productId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductsController.UpdateProductBurn(System.Int32,System.Collections.Generic.IEnumerable{Moonshine.Services.Products.Dtos.ProductAssociatedProductDto})">
+            <summary>
+            Will perform updates and deletes to
+            the associated products of the specifed type. 
+            </summary>
+            <param name="productId"></param>
+            <param name="burns"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductsController.UpdateProductComposing(System.Int32,System.Collections.Generic.IEnumerable{Moonshine.Services.Products.Dtos.ProductAssociatedProductDto})">
+            <summary>
+            Will perform updates and deletes to
+            the associated products of the specifed type. 
+            </summary>
+            <param name="productId"></param>
+            <param name="composing"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductsController.PreviewVoucher(System.Int32,System.Boolean)">
+            <summary>
+            Preview the voucher for the tours
+            </summary>
+            <param name="productId"></param>
+            <param name="reverse"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Products.ProductSpecificationController">
+            <summary>
+                Gets specification attributes, for a specific product or not.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductSpecificationController.#ctor(Moonshine.Services.Products.SpecificationAttributes.IProductSpecificationAttributeService)">
+            <summary>
+            ctor
+            </summary>
+            <param name="productSpecificationAttributeService"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductSpecificationController.GetAllForProduct(System.Int32)">
+            <summary>
+                Gets all of the specification attributes for a productID
+            </summary>
+            <param name="productId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductSpecificationController.GetAll">
+            <summary>
+                Gets all of the specification attributes that
+                can be applied
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductSpecificationController.GetOptionsByName(System.String)">
+            <summary>
+                Gets all of the specification attributes that
+                can be applied
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductSpecificationController.UpdateProductSpecifications(System.Int32,System.Collections.Generic.List{Moonshine.Services.Products.Dtos.SpecificationAttributes.SpecificationAttributeDto})">
+            <summary>
+                Adds or Updates the product specifications.
+            </summary>
+            <param name="productId"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Products.ProductSpecificationController.Delete(System.Int32,System.Collections.Generic.List{System.Int32})">
+            <summary>
+                Unmaps a product with a specification attribute.
+            </summary>
+            <param name="productId"></param>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Reports.AffiliateReportController">
+            <summary>
+            Provides APIs for retrieving affiliate reports.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Reports.AffiliateReportController.#ctor(Moonshine.Services.Reports.IAffiliateReportService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Reports.AffiliateReportController"/> class.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Reports.AffiliateReportController.GetReport(Moonshine.Services.Reports.Dto.AffiliateReportRequest)">
+            <summary>
+            Gets an affiliate report with specified filters.
+            </summary>
+            <param name="request"></param>
+            <returns>An affiliate report</returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Reports.FinancialReportController">
+            <summary>
+            Provides APIs for retrieving financial reports.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Reports.FinancialReportController.#ctor(Moonshine.Services.Reports.IFinancialReportService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Reports.FinancialReportController"/> class.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Reports.FinancialReportController.GetReport(Moonshine.Services.Reports.Dto.FinancialReportRequest)">
+            <summary>
+            Gets a financial report with specified filters.
+            </summary>
+            <param name="request"></param>
+            <returns>A financial report</returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Reports.FinancialReportController.GetDepartments">
+            <summary>
+            Gets all departments 
+            </summary>
+            <returns>List of departments</returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Reports.FinancialReportController.GetTours">
+            <summary>
+            Gets all tours
+            </summary>
+            <returns>List of tours</returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Reports.TravelAgentReportController">
+            <summary>
+            Provides APIs for retrieving travel agent reports.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Reports.TravelAgentReportController.#ctor(Moonshine.Services.Reports.ITravelAgentReportService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Reports.TravelAgentReportController"/> class.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Reports.TravelAgentReportController.GetReport(Moonshine.Services.Reports.TravelAgentReportRequest)">
+            <summary>
+            Gets a travel agent report with specified filters.
+            </summary>
+            <param name="request"></param>
+            <returns>A travel agent report</returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Reports.TravelAgentReportController.SavePaymentRecord(System.Int32)">
+            <summary>
+            Saves the date of a travel agent commission payment on an order item
+            </summary>
+            <param name="orderItemId">The Id of an order item</param>
+            <returns>A travel agent report entry</returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Reports.TravelAgentReportController.ClearPaymentRecord(System.Int32)">
+            <summary>
+            Clears the date of a travel agent commission payment on an order item
+            </summary>
+            <param name="orderItemId">The Id of an order item</param>
+            <returns>A travel agent report entry</returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Reports.WholesalerReportController">
+            <summary>
+            Provides APIs for retrieving wholesaler reports.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Reports.WholesalerReportController.#ctor(Moonshine.Services.Reports.IWholesalerReportService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Reports.WholesalerReportController"/> class.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Reports.WholesalerReportController.GetReport(Moonshine.Services.Reports.Dto.WholesalerReportRequest)">
+            <summary>
+            Gets a wholesaler report with specified filters.
+            </summary>
+            <param name="request"></param>
+            <returns>A wholesaler report</returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Tickets.TicketsController">
+            <summary>
+            Provides APIs for working with tickets.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Tickets.TicketsController.#ctor(Moonshine.Services.Tickets.ITicketsService,Moonshine.Services.Security.IPermissionCheckerService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Tickets.TicketsController"/> class.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Tickets.TicketsController.GetAll(Moonshine.Services.Tickets.Dtos.GetAllTicketsRequest)">
+            <summary>
+            Gets all tickets
+            </summary>
+            <remarks>This API will get all tickets using the specified parameters.</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Tickets.TicketsController.MoveTicket(Moonshine.Services.Tickets.Dtos.MoveTicketRequest)">
+            <summary>
+            Moves a ticket to the specified instance.
+            </summary>
+            <remarks>This API will move the specified ticket to the specified instance.</remarks>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Users.AuthenticationController">
+            <summary>
+            Provides APIs for allowing users to authenticate with the API.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Users.AuthenticationController.#ctor(Microsoft.Extensions.Options.IOptions{Moonshine.Core.Configuration.AppSettings},Moonshine.Services.Authentication.IAuthenticationService,Moonshine.Services.Users.IUserRefreshTokenService,Moonshine.Services.Users.IUserService,Moonshine.Services.Authentication.ICurrentUserService,Moonshine.Core.ObjectMapping.IObjectMapper)">
+            <summary>
+            Initializes a new isntance of the <see cref="T:Moonshine.Api.Controllers.Users.AuthenticationController"/> class.
+            </summary>
+            <param name="appSettings"></param>
+            <param name="authenticationService"></param>
+            <param name="userRefreshTokenService"></param>
+            <param name="userService"></param>
+            <param name="currentUserService"></param>
+            <param name="mapperService"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Users.AuthenticationController.Login(Moonshine.Services.Users.Dtos.AuthenticationRequest)">
+            <summary>
+            Login the user and generate an auth token
+            </summary>
+            <remarks>Logs a user in using a user's email and password, and returns a generated auth token</remarks>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Users.AuthenticationController.Logout">
+            <summary>
+            Logs out the current user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Users.AuthenticationController.RefreshToken(System.String)">
+            <summary>
+            Refresh's the auth token for the current user
+            </summary>
+            <param name="refreshToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Users.AuthenticationController.LogUserInByToken">
+            <summary>
+            Logs in a user by token.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Users.UserRolesController">
+            <summary>
+            Provides APIs for working with user roles and permissions.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Users.UserRolesController.#ctor(Moonshine.Services.Users.IUserRoleService,Moonshine.Services.Security.IPermissionCheckerService,Moonshine.Services.Users.IPermissionUserRoleMappingService,Moonshine.Services.Users.IPermissionService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Users.UserRolesController"/> class.
+            </summary>
+            <param name="userRoleService"></param>
+            <param name="permissionCheckerService"></param>
+            <param name="permissionUserRoleMappingService"></param>
+            <param name="permissionService"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Users.UserRolesController.Insert(Moonshine.Services.Users.Dtos.InsertUserRoleRequest)">
+            <summary>
+            Insert user role
+            </summary>
+            <param name="request"></param>
+            <remarks>This API will insert a user role.</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Users.UserRolesController.Insert(System.Int32,System.Int32)">
+            <summary>
+            Add a permission record to user role
+            </summary>
+            <param name="userRoleId"></param>
+            <param name="id"></param>
+            <remarks>This API will add a permission record to user role.</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Users.UserRolesController.Get(System.Int32)">
+            <summary>
+            Get details about a user role.
+            </summary>
+            <param name="id"></param>
+            <remarks>This API will get a user role.</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Users.UserRolesController.GetAll(Moonshine.Services.Users.Dtos.GetAllUserRolesRequest)">
+            <summary>
+            Get all user roles 
+            </summary>
+            <param name="request"></param>
+            <remarks>This API will get all user roles.</remarks>
+            <returns>userRoles</returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Users.UserRolesController.GetPermission(System.Int32,System.Int32)">
+            <summary>
+            Get details about a permission record.
+            </summary>
+            <param name="userRoleId"></param>
+            <param name="id"></param>
+            <remarks>This API will get a permission record.</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Users.UserRolesController.GetAllPermissions(Moonshine.Services.Users.Dtos.GetAllPermissionRecordsRequest)">
+            <summary>
+            Get all permission records
+            </summary>
+            <param name="request"></param>
+            <returns>userRoles</returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Users.UserRolesController.Update(Moonshine.Services.Users.Dtos.UpdateUserRoleRequest)">
+            <summary>
+            Update user role
+            </summary>
+            <param name="request"></param>
+            <remarks>This API will update a user role.</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Users.UserRolesController.InstallNewPermissionsFromSheet">
+            <summary>
+            Install new permissions from sheet
+            </summary>
+            <returns>userRoles</returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Users.UserRolesController.Delete(System.Int32)">
+            <summary>
+            Delete user role associated with a specified identifier
+            </summary>
+            <param name="id"></param>
+            <remarks>This API will delete a user role.</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Users.UserRolesController.Delete(System.Int32,System.Int32)">
+            <summary>
+            Remove a permission record from user role
+            </summary>
+            <param name="userRoleId"></param>
+            <param name="id"></param>
+            <remarks>This API will remove a permission record from user role.</remarks>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Users.UsersController">
+            <summary>
+            Provides APIs for working with users.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Users.UsersController.#ctor(Moonshine.Services.Users.IUserService,Moonshine.Services.Users.IUserRegistrationService,Moonshine.Services.Users.IOnlineUserService,Moonshine.Services.Security.IPermissionCheckerService,Moonshine.Services.Authentication.ICurrentUserService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Users.UsersController"/> class.
+            </summary>
+            <param name="userService"></param>
+            <param name="userRegistrationService"></param>
+            <param name="onlineUserService"></param>
+            <param name="permissionCheckerService"></param>
+            <param name="currentUserService"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Users.UsersController.Get(System.Int32)">
+            <summary>
+            Gets a specific user with the specified identifier.
+            </summary>
+            <param name="id">Id of the user</param>
+            <returns>User data</returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Users.UsersController.GetAll(Moonshine.Services.Users.Dtos.SearchUsersRequest)">
+            <summary>
+            Gets a collection of users using the specified parameters.
+            </summary>
+            <param name="request"></param>
+            <returns>A collection of users.</returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Users.UsersController.GetUserByEmail(System.String)">
+            <summary>
+            Gets user by email
+            </summary>
+            <param name="email"></param>
+            <returns>A collection of users.</returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Users.UsersController.NewCustomer(Moonshine.Services.Users.Dtos.CreateCustomerRequest)">
+            <summary>
+            Creates a new customer user
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Users.UsersController.Register(Moonshine.Services.Users.Dtos.RegisterUserRequest)">
+            <summary>
+            Register a new user in the system
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Users.UsersController.RegisterGuest">
+            <summary>
+            Register a guest user in the system
+            </summary>
+            <returns>Returns the user identifier</returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Users.UsersController.Put(Moonshine.Services.Users.Dtos.UpdateUserRequest)">
+            <summary>
+            Updates a user with the specified parameters.
+            </summary>
+            <param name="request">User update info</param>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Users.UsersController.PostOnlineUser(Moonshine.Services.Users.Dtos.OnlineUserDto)">
+            <summary>
+            Registers a new online user
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Users.UsersController.GetOnlineUsers(System.String)">
+            <summary>
+            Gets a list of online users with the specified parameters
+            </summary>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Viator.ViatorController">
+            <summary>
+            Provides APIs for working the Viator reservation system.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Viator.ViatorController.#ctor(Moonshine.Services.Api.Viator.IViatorService,Microsoft.Extensions.Logging.ILogger{Moonshine.Api.Controllers.Viator.ViatorController})">
+            <summary>
+            
+            </summary>
+            <param name="viatorService"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Viator.ViatorController.Booking(Moonshine.Services.Api.Viator.Dtos.BookingRequest)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Viator.ViatorController.TourList(Moonshine.Services.Api.Viator.Dtos.TourListRequest)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Viator.ViatorController.Availability(Moonshine.Services.Api.Viator.Dtos.AvailabilityRequest)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Viator.ViatorController.BatchAvailability(Moonshine.Services.Api.Viator.Dtos.BatchAvailabilityRequest)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.Vouchers.VoucherController">
+            <summary>
+            Provides APIs for working with vouchers.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Vouchers.VoucherController.#ctor(Moonshine.Services.Orders.IVoucherService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.Vouchers.VoucherController"/> class.
+            </summary>
+            <param name="voucherService"></param>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.Vouchers.VoucherController.Index(System.Int32,System.Boolean)">
+            <summary>
+            Gets/downloads a voucher for the specified order/booking number.
+            </summary>
+            <param name="bookingId"></param>
+            <param name="downloadFile"><c>true</c> to download voucher as a file, otherwise voucher will be returned in preview mode.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Controllers.WebSites.WebSitesController">
+            <summary>
+            Provides APIs for working with websites.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.WebSites.WebSitesController.#ctor(Moonshine.Services.WebSites.IWebSiteService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Controllers.WebSites.WebSitesController"/> class.
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Controllers.WebSites.WebSitesController.GetAll">
+            <summary>
+            Gets all web sites
+            </summary>
+            <remarks>This API will get all web sites.</remarks>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Program.Main(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Moonshine.Api.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            Create host builder
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Moonshine.Api.Startup">
+            <summary>
+            Main startup class for the application.
+            </summary>
+        </member>
+        <member name="P:Moonshine.Api.Startup.Configuration">
+            <summary>
+            Represents the main app settings used by the application (appsettings.json).
+            </summary>
+        </member>
+        <member name="M:Moonshine.Api.Startup.#ctor(Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Moonshine.Api.Startup"/> class.
+            </summary>
+            <param name="hostingEnvironment"></param>
+        </member>
+        <member name="M:Moonshine.Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configures required application services
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Moonshine.Api.Startup.ConfigureContainer(Autofac.ContainerBuilder)">
+            <summary>
+            ConfigureContainer is where you can register things directly
+            with Autofac. This runs after ConfigureServices so the things
+            here will override registrations made in ConfigureServices.
+            Don't build the container; that gets done for you by the factory.
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="M:Moonshine.Api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Autofac.ILifetimeScope,Microsoft.Extensions.Logging.ILogger{Moonshine.Api.Startup})">
+            <summary>
+            Configured required application behaviour
+            </summary>
+            <param name="app"></param>
+            <param name="container"></param>
+            <param name="logger"></param>
+        </member>
+    </members>
+</doc>

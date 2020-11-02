@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Altos.Data/1.0.0": {
+        "dependencies": {
+          "Altos.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Altos.Data.dll": {}
+        }
+      },
+      "Altos.Domain/1.0.0": {
+        "runtime": {
+          "Altos.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Altos.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Altos.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
