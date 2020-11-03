@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "HhbpH2BTtCizh+hE3uzvXiRGnYcMcuwg4TOf8/lAsSxq7Wc+fJTsuh8onoJFZ+sJWNxQWRDQqxq52LmLOKg7Iw==",
+  "dgSpecHash": "erfd0hKRQEAJS4jtMp/hOLyw9g/tg4T4mYCrcS08M0a47oqeBsML1UK1xXM3Ttw/aieSnL8xrMdGtrfhuYYLOg==",
   "success": true,
-  "projectFilePath": "D:\\_Projects\\Tests\\AltosService\\AltosService\\BaseLibraries\\Altos.Services\\Altos.Services.csproj",
+  "projectFilePath": "D:\\_Projects\\Tests\\Altos\\AltosService\\BaseLibraries\\Altos.Services\\Altos.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ibrahim.altos\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\ibrahim.altos\\.nuget\\packages\\fluentvalidation\\9.2.2\\fluentvalidation.9.2.2.nupkg.sha512",
     "C:\\Users\\ibrahim.altos\\.nuget\\packages\\fluentvalidation.validatorattribute\\8.6.1\\fluentvalidation.validatorattribute.8.6.1.nupkg.sha512",
     "C:\\Users\\ibrahim.altos\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\ibrahim.altos\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\ibrahim.altos\\.nuget\\packages\\system.linq.dynamic.core\\1.2.5\\system.linq.dynamic.core.1.2.5.nupkg.sha512",
     "C:\\Users\\ibrahim.altos\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
   ],
   "logs": [

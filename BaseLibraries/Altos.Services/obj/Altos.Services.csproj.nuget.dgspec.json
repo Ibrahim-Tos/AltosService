@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\_Projects\\Tests\\AltosService\\AltosService\\BaseLibraries\\Altos.Services\\Altos.Services.csproj": {}
+    "D:\\_Projects\\Tests\\Altos\\AltosService\\BaseLibraries\\Altos.Services\\Altos.Services.csproj": {}
   },
   "projects": {
-    "D:\\_Projects\\Tests\\AltosService\\AltosService\\BaseLibraries\\Altos.Data\\Altos.Data.csproj": {
+    "D:\\_Projects\\Tests\\Altos\\AltosService\\BaseLibraries\\Altos.Data\\Altos.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\_Projects\\Tests\\AltosService\\AltosService\\BaseLibraries\\Altos.Data\\Altos.Data.csproj",
+        "projectUniqueName": "D:\\_Projects\\Tests\\Altos\\AltosService\\BaseLibraries\\Altos.Data\\Altos.Data.csproj",
         "projectName": "Altos.Data",
-        "projectPath": "D:\\_Projects\\Tests\\AltosService\\AltosService\\BaseLibraries\\Altos.Data\\Altos.Data.csproj",
+        "projectPath": "D:\\_Projects\\Tests\\Altos\\AltosService\\BaseLibraries\\Altos.Data\\Altos.Data.csproj",
         "packagesPath": "C:\\Users\\ibrahim.altos\\.nuget\\packages\\",
-        "outputPath": "D:\\_Projects\\Tests\\AltosService\\AltosService\\BaseLibraries\\Altos.Data\\obj\\",
+        "outputPath": "D:\\_Projects\\Tests\\Altos\\AltosService\\BaseLibraries\\Altos.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -32,8 +32,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\_Projects\\Tests\\AltosService\\AltosService\\BaseLibraries\\Altos.Domain\\Altos.Domain.csproj": {
-                "projectPath": "D:\\_Projects\\Tests\\AltosService\\AltosService\\BaseLibraries\\Altos.Domain\\Altos.Domain.csproj"
+              "D:\\_Projects\\Tests\\Altos\\AltosService\\BaseLibraries\\Altos.Domain\\Altos.Domain.csproj": {
+                "projectPath": "D:\\_Projects\\Tests\\Altos\\AltosService\\BaseLibraries\\Altos.Domain\\Altos.Domain.csproj"
               }
             }
           }
@@ -65,14 +65,14 @@
         }
       }
     },
-    "D:\\_Projects\\Tests\\AltosService\\AltosService\\BaseLibraries\\Altos.Domain\\Altos.Domain.csproj": {
+    "D:\\_Projects\\Tests\\Altos\\AltosService\\BaseLibraries\\Altos.Domain\\Altos.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\_Projects\\Tests\\AltosService\\AltosService\\BaseLibraries\\Altos.Domain\\Altos.Domain.csproj",
+        "projectUniqueName": "D:\\_Projects\\Tests\\Altos\\AltosService\\BaseLibraries\\Altos.Domain\\Altos.Domain.csproj",
         "projectName": "Altos.Domain",
-        "projectPath": "D:\\_Projects\\Tests\\AltosService\\AltosService\\BaseLibraries\\Altos.Domain\\Altos.Domain.csproj",
+        "projectPath": "D:\\_Projects\\Tests\\Altos\\AltosService\\BaseLibraries\\Altos.Domain\\Altos.Domain.csproj",
         "packagesPath": "C:\\Users\\ibrahim.altos\\.nuget\\packages\\",
-        "outputPath": "D:\\_Projects\\Tests\\AltosService\\AltosService\\BaseLibraries\\Altos.Domain\\obj\\",
+        "outputPath": "D:\\_Projects\\Tests\\Altos\\AltosService\\BaseLibraries\\Altos.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -122,14 +122,14 @@
         }
       }
     },
-    "D:\\_Projects\\Tests\\AltosService\\AltosService\\BaseLibraries\\Altos.Services\\Altos.Services.csproj": {
+    "D:\\_Projects\\Tests\\Altos\\AltosService\\BaseLibraries\\Altos.Services\\Altos.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\_Projects\\Tests\\AltosService\\AltosService\\BaseLibraries\\Altos.Services\\Altos.Services.csproj",
+        "projectUniqueName": "D:\\_Projects\\Tests\\Altos\\AltosService\\BaseLibraries\\Altos.Services\\Altos.Services.csproj",
         "projectName": "Altos.Services",
-        "projectPath": "D:\\_Projects\\Tests\\AltosService\\AltosService\\BaseLibraries\\Altos.Services\\Altos.Services.csproj",
+        "projectPath": "D:\\_Projects\\Tests\\Altos\\AltosService\\BaseLibraries\\Altos.Services\\Altos.Services.csproj",
         "packagesPath": "C:\\Users\\ibrahim.altos\\.nuget\\packages\\",
-        "outputPath": "D:\\_Projects\\Tests\\AltosService\\AltosService\\BaseLibraries\\Altos.Services\\obj\\",
+        "outputPath": "D:\\_Projects\\Tests\\Altos\\AltosService\\BaseLibraries\\Altos.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -150,14 +150,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\_Projects\\Tests\\AltosService\\AltosService\\BaseLibraries\\Altos.Data\\Altos.Data.csproj": {
-                "projectPath": "D:\\_Projects\\Tests\\AltosService\\AltosService\\BaseLibraries\\Altos.Data\\Altos.Data.csproj"
+              "D:\\_Projects\\Tests\\Altos\\AltosService\\BaseLibraries\\Altos.Data\\Altos.Data.csproj": {
+                "projectPath": "D:\\_Projects\\Tests\\Altos\\AltosService\\BaseLibraries\\Altos.Data\\Altos.Data.csproj"
               },
-              "D:\\_Projects\\Tests\\AltosService\\AltosService\\BaseLibraries\\Altos.Domain\\Altos.Domain.csproj": {
-                "projectPath": "D:\\_Projects\\Tests\\AltosService\\AltosService\\BaseLibraries\\Altos.Domain\\Altos.Domain.csproj"
+              "D:\\_Projects\\Tests\\Altos\\AltosService\\BaseLibraries\\Altos.Domain\\Altos.Domain.csproj": {
+                "projectPath": "D:\\_Projects\\Tests\\Altos\\AltosService\\BaseLibraries\\Altos.Domain\\Altos.Domain.csproj"
               },
-              "D:\\_Projects\\Tests\\AltosService\\AltosService\\BaseLibraries\\Altos.Util\\Altos.Util.csproj": {
-                "projectPath": "D:\\_Projects\\Tests\\AltosService\\AltosService\\BaseLibraries\\Altos.Util\\Altos.Util.csproj"
+              "D:\\_Projects\\Tests\\Altos\\AltosService\\BaseLibraries\\Altos.Util\\Altos.Util.csproj": {
+                "projectPath": "D:\\_Projects\\Tests\\Altos\\AltosService\\BaseLibraries\\Altos.Util\\Altos.Util.csproj"
               }
             }
           }
@@ -203,14 +203,14 @@
         }
       }
     },
-    "D:\\_Projects\\Tests\\AltosService\\AltosService\\BaseLibraries\\Altos.Util\\Altos.Util.csproj": {
+    "D:\\_Projects\\Tests\\Altos\\AltosService\\BaseLibraries\\Altos.Util\\Altos.Util.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\_Projects\\Tests\\AltosService\\AltosService\\BaseLibraries\\Altos.Util\\Altos.Util.csproj",
+        "projectUniqueName": "D:\\_Projects\\Tests\\Altos\\AltosService\\BaseLibraries\\Altos.Util\\Altos.Util.csproj",
         "projectName": "Altos.Util",
-        "projectPath": "D:\\_Projects\\Tests\\AltosService\\AltosService\\BaseLibraries\\Altos.Util\\Altos.Util.csproj",
+        "projectPath": "D:\\_Projects\\Tests\\Altos\\AltosService\\BaseLibraries\\Altos.Util\\Altos.Util.csproj",
         "packagesPath": "C:\\Users\\ibrahim.altos\\.nuget\\packages\\",
-        "outputPath": "D:\\_Projects\\Tests\\AltosService\\AltosService\\BaseLibraries\\Altos.Util\\obj\\",
+        "outputPath": "D:\\_Projects\\Tests\\Altos\\AltosService\\BaseLibraries\\Altos.Util\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -241,6 +241,20 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "System.Linq.Dynamic.Core": {
+              "target": "Package",
+              "version": "[1.2.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

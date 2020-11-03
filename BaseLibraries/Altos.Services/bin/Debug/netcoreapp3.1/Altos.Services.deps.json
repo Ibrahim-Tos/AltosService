@@ -51,6 +51,22 @@
         }
       },
       "Microsoft.CSharp/4.7.0": {},
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        }
+      },
+      "System.Linq.Dynamic.Core/1.2.5": {
+        "runtime": {
+          "lib/netcoreapp2.1/System.Linq.Dynamic.Core.dll": {
+            "assemblyVersion": "1.2.5.0",
+            "fileVersion": "1.2.5.0"
+          }
+        }
+      },
       "System.Reflection.Emit/4.7.0": {},
       "Altos.Data/1.0.0": {
         "dependencies": {
@@ -66,6 +82,11 @@
         }
       },
       "Altos.Util/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "10.1.1",
+          "Newtonsoft.Json": "12.0.3",
+          "System.Linq.Dynamic.Core": "1.2.5"
+        },
         "runtime": {
           "Altos.Util.dll": {}
         }
@@ -105,6 +126,20 @@
       "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
       "path": "microsoft.csharp/4.7.0",
       "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
+    "System.Linq.Dynamic.Core/1.2.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uTZSZvntd0Qwpb7Iwq/QZRX+osr57XwDfh2fX6S6PGxl+k5C9ehK7rxs9DFJlCVSTgVhk4CSf6fobhN//uxggw==",
+      "path": "system.linq.dynamic.core/1.2.5",
+      "hashPath": "system.linq.dynamic.core.1.2.5.nupkg.sha512"
     },
     "System.Reflection.Emit/4.7.0": {
       "type": "package",

@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "L0hcMQh3Edct+rasRvbs8+85zkJEv5y7roOYkaoyjtHmJtRiVZcHs2BHORdCGnhA/pnyCa5oJb4vBQNHdKWx7w==",
+  "dgSpecHash": "GGa8MYmLDgBeIHDpAH/RIpF/CT0AKl+pTQMH+8gDTbitducfDMrhpCMcWa+WimMhNKnhE7Tt0/7GGwVMGkY9kQ==",
   "success": true,
-  "projectFilePath": "D:\\_Projects\\Tests\\AltosService\\AltosService\\BaseLibraries\\Altos.Util\\Altos.Util.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\_Projects\\Tests\\Altos\\AltosService\\BaseLibraries\\Altos.Util\\Altos.Util.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ibrahim.altos\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\ibrahim.altos\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\ibrahim.altos\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\ibrahim.altos\\.nuget\\packages\\system.linq.dynamic.core\\1.2.5\\system.linq.dynamic.core.1.2.5.nupkg.sha512",
+    "C:\\Users\\ibrahim.altos\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

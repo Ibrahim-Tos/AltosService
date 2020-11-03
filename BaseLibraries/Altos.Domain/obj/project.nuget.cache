@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vVSLswZAqmDKkwY4ea2kedzZ18zwX5y1XfVH+6Fftp18soZIdH8wL7p79Uq0RuzqihzFqhI+U1aV6e4rdRO0rw==",
+  "dgSpecHash": "atW0ZqfcugzuCFXFoVN0dOBq9UUD35h6Y6W8b0Bfs2PpaO3LETyMr/+IaJCNHnKDlOmQiJ2oXe+xVm/VYxe94w==",
   "success": true,
-  "projectFilePath": "D:\\_Projects\\Tests\\AltosService\\AltosService\\BaseLibraries\\Altos.Domain\\Altos.Domain.csproj",
+  "projectFilePath": "D:\\_Projects\\Tests\\Altos\\AltosService\\BaseLibraries\\Altos.Domain\\Altos.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
